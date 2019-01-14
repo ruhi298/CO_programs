@@ -16,7 +16,7 @@ void bin_to_dec(int n)
         base=base*2;
     }
 
-    cout<<"The decimal is: "<<decimal;
+    cout<<"The decimal value is: "<<decimal;
 }
 void dec_to_bin(int n)
 {
@@ -28,7 +28,7 @@ void dec_to_bin(int n)
         n=n/2;
         i++;
     }
-    cout<<"The binary number is";
+    cout<<"The binary value is";
     for (int j=i-1;j>=0;j--)
         {
 			cout<<binary[j];
@@ -41,19 +41,19 @@ int main()
 	int x;
 	do
 	{
-	cout<<"\nEnter 1 to covert a decimal number to binary \n"<<"\nEnter 2 to covert binary number to decimal \n";
+	cout<<"\nEnter your choice: \n 1 Decimal to Binary \n"<<"\n 2 Binary to decimal \n";
 	cin>>x;
 	switch(x)
 	{
 		case 1:
 		int n;
-		cout<<"\nEnter the decimal number you want to covert: ";
+		cout<<"\nEnter the decimal number : ";
 		cin>>n;
 		dec_to_bin(n);
 		break;
 		case 2:
 		int n1;
-		cout<<"\nEnter the binary number you want to covert :";
+		cout<<"\nEnter the binary number  :";
 		cin>>n1;
 		bin_to_dec(n1);
 		break;
